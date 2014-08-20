@@ -44,7 +44,7 @@ def create_message(notifications, use_applications_group=False):
         _log_api_call(
             constants.API_METHOD_CREATE_MESSAGE,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -64,7 +64,7 @@ def delete_message(message_code):
         _log_api_call(
             constants.API_METHOD_DELETE_MESSAGE,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -89,7 +89,7 @@ def register_device(device_push_token, hwid, timezone_offset_seconds,
         _log_api_call(
             constants.API_METHOD_REGISTER_DEVICE,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -109,7 +109,7 @@ def unregister_device(hwid):
         _log_api_call(
             constants.API_METHOD_UNREGISTER_DEVICE,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -130,7 +130,7 @@ def set_tags(hwid, tags):
         _log_api_call(
             constants.API_METHOD_SET_TAGS,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -151,7 +151,7 @@ def get_tags(hwid):
         _log_api_call(
             constants.API_METHOD_GET_TAGS,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -172,7 +172,7 @@ def set_badge(hwid, badge):
         _log_api_call(
             constants.API_METHOD_SET_BADGE,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -193,7 +193,7 @@ def push_stat(hwid, notification_hash):
         _log_api_call(
             constants.API_METHOD_PUSH_STAT,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
 
@@ -215,6 +215,6 @@ def get_nearest_zone(hwid, latitude, longitude):
         _log_api_call(
             constants.API_METHOD_GET_NEAREST_ZONE,
             request_data=data,
-            respose_data=response.json()
+            response_data=response.json()
         )
     return response
