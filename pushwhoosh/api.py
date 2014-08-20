@@ -16,7 +16,7 @@ def _log_api_call(api_method, request_data, response_data):
     models.PushWhooshNotification.objects.create(
         api_method=api_method,
         request_data=request_data,
-        respose_data=response_data
+        response_data=response_data
     )
 
 
