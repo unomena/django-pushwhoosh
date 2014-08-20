@@ -25,4 +25,4 @@ class PushWhooshNotification(models.Model):
     def save(self, *args, **kwargs):
         if not self.id:
             self.uuid = uuid.uuid4()
-        super(PushWhooshNotification).save(*args, **kwargs)
+        super(PushWhooshNotification, self).save(*args, **kwargs)
